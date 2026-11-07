@@ -1,15 +1,22 @@
-# Wer muss welche Änderungen reviewen? (GitHub fordert die Review automatisch an.)
-# Spätere Regeln überschreiben frühere.
-
-# Standard: beide
-*                       @Mecrylol @arwedc
-
-# Eigene Bereiche
-/apps/mobile/           @Mecrylol
-/apps/web/              @arwedc
+# Wer muss welche Änderungen freigeben?
+# Zusammen mit der Ruleset-Option „Require review from Code Owners“ gilt:
+# - Gemeinsame Bereiche (unten): Änderungen brauchen die Freigabe des jeweils anderen.
+# - Eigene Ordner (apps/web, apps/mobile) stehen bewusst NICHT hier → frei änderbar, kein Review nötig.
+#   (Stünde dort nur der Autor selbst, könnte er seinen eigenen PR nie freigeben.)
+# - pnpm-lock.yaml steht ebenfalls nicht hier, da sie sich bei jeder App-Abhängigkeit ändert.
 
 # Gemeinsame Bereiche – immer beide
-/supabase/              @Mecrylol @arwedc
-/packages/shared/       @Mecrylol @arwedc
-/docs/                  @Mecrylol @arwedc
-/.github/               @Mecrylol @arwedc
+/supabase/                @Mecrylol @arwedc
+/packages/shared/         @Mecrylol @arwedc
+/docs/                    @Mecrylol @arwedc
+/.github/                 @Mecrylol @arwedc
+
+# Root-Konfiguration
+/package.json             @Mecrylol @arwedc
+/pnpm-workspace.yaml      @Mecrylol @arwedc
+/tsconfig.base.json       @Mecrylol @arwedc
+/eslint.config.mjs        @Mecrylol @arwedc
+/.prettierrc.json         @Mecrylol @arwedc
+/.env.example             @Mecrylol @arwedc
+/CLAUDE.md                @Mecrylol @arwedc
+/.mcp.json                @Mecrylol @arwedc
