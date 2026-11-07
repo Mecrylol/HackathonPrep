@@ -1,0 +1,24 @@
+{
+  "name": "@app/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Plattformneutraler Code für Web und App: Typen, Schemas, Konstanten, Tokens, Helfer.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./tokens": "./src/tokens/index.ts",
+    "./database.types": "./src/database.types.ts"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3",
+    "vitest": "^5.1.0"
+  }
+}

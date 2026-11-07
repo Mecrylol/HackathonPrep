@@ -1,43 +1,38 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Abhängigkeiten
 node_modules/
 
-# Expo
-.expo/
+# Build / Caches
 dist/
+build/
+.next/
+.expo/
 web-build/
-expo-env.d.ts
+coverage/
+*.tsbuildinfo
+.turbo/
+.eslintcache
 
-# Native
-.kotlin/
-*.orig.*
+# Env – Secrets nie committen (.env.example ist erlaubt)
+.env
+.env.*
+!.env.example
+
+# Supabase lokal
+supabase/.temp/
+supabase/.branches/
+
+# Native (Expo CNG)
+apps/mobile/ios/
+apps/mobile/android/
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
 *.pem
 
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-example
-
-# generated native folders
-/ios
-/android
+# Logs / OS
+npm-debug.*
+pnpm-debug.log*
+.DS_Store
+.metro-health-check*

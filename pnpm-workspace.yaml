@@ -1,0 +1,8 @@
+packages:
+  - apps/*
+  - packages/*
+
+# pnpm 11+: nur diese Pakete dürfen Install-Skripte ausführen
+allowBuilds:
+  supabase: true
+  esbuild: true

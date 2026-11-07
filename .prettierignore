@@ -1,0 +1,9 @@
+node_modules
+pnpm-lock.yaml
+.agents
+.claude
+supabase/.temp
+packages/shared/src/database.types.ts
+
+# Markdown nicht formatieren (Tabellen bleiben lesbar)
+*.md

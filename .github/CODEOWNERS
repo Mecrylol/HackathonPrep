@@ -1,0 +1,15 @@
+# Wer muss welche Änderungen reviewen? (GitHub fordert die Review automatisch an.)
+# Spätere Regeln überschreiben frühere.
+
+# Standard: beide
+*                       @Mecrylol @arwedc
+
+# Eigene Bereiche
+/apps/mobile/           @Mecrylol
+/apps/web/              @arwedc
+
+# Gemeinsame Bereiche – immer beide
+/supabase/              @Mecrylol @arwedc
+/packages/shared/       @Mecrylol @arwedc
+/docs/                  @Mecrylol @arwedc
+/.github/               @Mecrylol @arwedc
